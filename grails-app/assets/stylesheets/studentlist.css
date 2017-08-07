@@ -1,0 +1,12 @@
+.list {
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    font-size: 14px;
+    margin: 0.5em 0;
+    outline: none;
+    color: #212121;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    letter-spacing: 1px;
+    text-align: left;
+}

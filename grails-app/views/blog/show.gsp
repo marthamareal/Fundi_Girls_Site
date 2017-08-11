@@ -68,8 +68,19 @@
                             <a href="singlepost.html" class="more">Read More</a>
                         </li>
                         <li>
-                    </g:each>
                     </ul>
+                    </g:each>
+
+
+                </div>
+                <div class="blogforms" id="blogforms">
+                    <g:form controller="blog" action="create" method="post">
+                        <input type="text" name="author" placeholder="Author" required="" ></br>
+
+                        <input type="text" name="title" placeholder="Tittle" required="">
+                        <g:textArea name="message"  hint="Write your post" required=""/><br>
+                        <g:submitButton name="create" value="POST"/>
+                    </g:form>
                 </div>
                 <div class="sidebar">
                     <ul>

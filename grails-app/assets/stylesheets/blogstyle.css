@@ -1416,3 +1416,10 @@ img {
 #wix a img {
 	width: 100%;
 }
+/*----------blog form---------------*/
+#blogforms{
+	background-color: #D5D5D5;
+	width: 560px;
+	font-size: small;
+
+}

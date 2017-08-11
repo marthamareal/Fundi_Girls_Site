@@ -44,6 +44,13 @@ ul{
 label{
 	margin:0;
 }
+
+#logoutB{
+	width: 5em;  height: 2em;
+	color: #ab000b;
+	font-size: x-small;
+	background-color: #0c0d0d;
+}
 /*--Banner stats here--*/
 .agileinfo-dot {
     background: url(../images/dott.png)repeat 0px 0px;

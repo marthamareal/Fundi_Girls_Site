@@ -24,7 +24,7 @@ class StudentRegisterController {
         else{
            student.save()
 
-            redirect action: 'show' , method: 'GET'
+            redirect action: '/' , method: 'GET'
             }
     }
 

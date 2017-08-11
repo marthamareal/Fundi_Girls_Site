@@ -7,12 +7,15 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.1"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
+        classpath 'org.grails.plugins:database-migration:2.0.1'
+        classpath "org.grails.plugins:database-migration:2.0.0.RC1"
     }
 }
 
 version "0.1"
 group "fundisite"
 
+apply plugin:"java"
 apply plugin:"eclipse"
 apply plugin:"idea"
 apply plugin:"war"
@@ -26,6 +29,8 @@ repositories {
 }
 
 dependencies {
+    compile 'org.grails.plugins:database-migration:2.0.0.RC4'
+    compile 'org.grails.plugins:spring-security-core:3.0.3'
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
@@ -47,15 +52,25 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    compile 'org.grails.plugins:database-migration:2.0.1'
+    compile 'org.liquibase:liquibase-core:3.5.3'
 }
 
 bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
     addResources = true
 }
+//added by me to compile for java
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.google.guava:guava-gwt:18.0'
+    compile 'javax.inject:javax.inject:1'
 
+}
 
 assets {
     minifyJs = true
     minifyCss = true
 }
+
+

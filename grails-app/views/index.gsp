@@ -37,10 +37,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <a href="#">Welcome  ${sec.username()}</a>
                             </ul>
                         </div>
                         <ul class="agile_forms" data-aos="fade-left">
-                            <li><a class="active" href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </li>
+
+                            <li>
+                            <div class="logot-button" id="logoutB">
+                           <g:if test="${sec.username()}" >
+                                <g:form method="post" controller="logout">
+                                   <li><g:submitButton name="LOGOUT"/></li>
+                                </g:form>
+                           </g:if>
+                            </div>
+                </li>
+                            <li><a href="${createLink(controller: 'login')}">LOGIN</a></li>
+                            %{--<li><a class="active" href="${createLink(controller: 'login')}" > <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </li>--}%
                             <li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Register</a> </li>
                         </ul>
                         <div class="clearfix"> </div>
@@ -96,8 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <ul class="slides">
                                 <li>
                                     <div class="banner-bottom-text">
-                                        <h3>Get around the clock support from payroll experts</h3>
-
+                                        <h3>Women </h3>
                                     </div>
                                 </li>
                                 <li>
@@ -108,7 +119,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li>
                                     <div class="banner-bottom-text">
                                         <h3>Get around the clock support from payroll experts</h3>
-
                                     </div>
                                 </li>
                                 <li>
@@ -132,39 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 <!--banner end here-->
-<!-- Modal2 -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                <div class="signin-form profile">
-                    <h3 class="agileinfo_sign">Login</h3>
-                    <div class="login-form">
-<g:form action="login" controller="studentRegister">
-    <input type="email" name="email" placeholder="E-mail" required="">
-    <input type="password" name="password" placeholder="Password" required="">
-    <div class="tp">
-        <input type="submit" value="Login">
-    </div>
-</g:form>
-                    </div>
-                    <div class="login-social-grids">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        </ul>
-                    </div>
-                    <p><a href="#" data-toggle="modal" data-target="#myModal3" > Don't have an account?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //Modal2 -->
 <!-- Modal3 -->
 <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -176,12 +154,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="signin-form profile">
                     <h3 class="agileinfo_sign">Register</h3>
                     <div class="login-form">
-<g:form action="register" controller="studentRegister" method="POST">
-    <input type="text" name="userName" placeholder="Username" required="" >
+<g:form action="save" controller="user" method="POST">
+    <input type="text" name="username" placeholder="Username" required="" >
     <input type="email" name="email" placeholder="Email" required="">
     <input type="password" name="password" placeholder="Password(above 5 characters)" required="">
-    <input type="password" name="comfirmpassword" placeholder="Confirm Password" required="">
-    <g:submitButton name="register" value="Register"/>
+    <input type="password" name="comfirmpassword" placeholder="Comfirm Password" required="">
+    <g:submitButton name="create" value="Register"/>
 </g:form>
                     </div>
                     <p><a href="#"> By clicking register, I agree to your terms</a></p>

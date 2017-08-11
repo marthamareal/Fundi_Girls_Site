@@ -12,6 +12,6 @@ class BlogController {
     def create(){
         def blog = new Blog(params)
         blog.save()
-
+        redirect action: 'show' , method: 'GET'
     }
 }

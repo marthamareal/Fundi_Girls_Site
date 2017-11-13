@@ -14,5 +14,6 @@ class UrlMappings {
         "404"(view:'/notFound')
         "/login/$action?"(controller: "login")
         "/logout/$action?"(controller: "logout")
+
     }
 }

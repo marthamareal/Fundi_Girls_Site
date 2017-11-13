@@ -1,4 +1,4 @@
-package fundisite
+package com.web.site
 
 class Blog {
     String author

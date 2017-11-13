@@ -1,4 +1,6 @@
-package fundisite
+package com.web.site
+
+import com.web.site.Blog
 
 class BlogController {
 

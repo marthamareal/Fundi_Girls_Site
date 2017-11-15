@@ -12,107 +12,66 @@
     <g:layoutHead/>
 </head>
 <body>
-%{--<nav class="navbar navbar-inverse">--}%
-    %{--<div class="container-fluid">--}%
-        %{--<div class="navbar-header">--}%
-            %{--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">--}%
-                %{--<span class="icon-bar"></span>--}%
-                %{--<span class="icon-bar"></span>--}%
-                %{--<span class="icon-bar"></span>--}%
-            %{--</button>--}%
-            %{--<a class="navbar-brand" href="#">WebSiteName</a>--}%
-        %{--</div>--}%
-        %{--<div class="collapse navbar-collapse" id="myNavbar">--}%
-            %{--<ul class="nav navbar-nav">--}%
-                %{--<li class="active"><a href="#">Home</a></li>--}%
-                %{--<li class="dropdown">--}%
-                    %{--<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>--}%
-                    %{--<ul class="dropdown-menu">--}%
-                        %{--<li><a href="#">Page 1-1</a></li>--}%
-                        %{--<li><a href="#">Page 1-2</a></li>--}%
-                        %{--<li><a href="#">Page 1-3</a></li>--}%
-                    %{--</ul>--}%
-                %{--</li>--}%
-                %{--<li><a href="#">Page 2</a></li>--}%
-                %{--<li><a href="#">Page 3</a></li>--}%
-            %{--</ul>--}%
-            %{--<ul class="nav navbar-nav navbar-right">--}%
-                %{--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>--}%
-                %{--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>--}%
-            %{--</ul>--}%
-        %{--</div>--}%
-    %{--</div>--}%
-%{--</nav>--}%
-
-    <!-- Navigation -->
-
-<div class="container">
-    %{--<div class="navbar navbar-expand-lg navbar-light w3l-social" data-aos="fade-right" style="margin-top: 0px; display:inline-table; background: black; color: white">--}%
-        %{--<ul class="agile_forms" data-aos="fade-left">--}%
-
-        %{--<li>--}%
-        %{--<div class="logot-button" id="logoutB">--}%
-            %{--<g:if test="${sec.username()}" >--}%
-                %{--<g:form method="post" controller="logout">--}%
-                    %{--<li><g:submitButton name="LOGOUT"/></li>--}%
-                %{--</g:form>--}%
-            %{--</g:if>--}%
-
-        %{--</li>--}%
-            %{--<li><a href="${createLink(controller: 'login')}">LOGIN</a></li>--}%
-            %{--<li><a class="active" href="${createLink(controller: 'login')}" > <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </li>--}%
-            %{--<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Register</a> </li>--}%
-        %{--</ul>--}%
-        %{--<ul>--}%
-            %{--<li><a href="#"><i class="fa fa-facebook"></i></a></li>--}%
-            %{--<li><a href="#"><i class="fa fa-twitter"></i></a></li>--}%
-            %{--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}%
-            %{--<a href="#">Welcome  ${sec.username()}</a>--}%
-        %{--</ul>--}%
-    %{--</div>--}%
-
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <a class="navbar-brand" href="index.html">Fund Girls Connect...........</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse form-group" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" ><g:link uri="/">Home</g:link></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" h><g:link uri="/">About</g:link></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" ><g:link uri="/">Sample Post</g:link></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" ><g:link uri="/">Contact</g:link></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" ><g:link uri="/">Signup/Signin</g:link></a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <div class="logot-button" id="logoutB">
-                <g:if test="${sec.username()}" >
-                <g:form method="post" controller="logout">
-                <li><g:submitButton name="LOGOUT"/></li>
-                </g:form>
-                </g:if>
-                <li><a class="active" href="${createLink(controller: 'login')}" > <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </li>
-                <li><a href="${createLink(controller: 'user' , action: 'register')}" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Register</a> </li>
+<!-- start header -->
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="topleft-info">
+                        <li><i class="fa fa-phone"></i> +256 758686536</li>
+                    </ul>
                 </div>
+                <div class="col-md-6">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                            <input class="sb-search-submit" type="submit" value="">
+                            <span class="sb-icon-search" title="Click to start searching"></span>
+                        </form>
+                    </div>
 
-            </ul>
-
+                </div>
+            </div>
         </div>
-</nav>
+    </div>
+
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="color: orange">FUNDI GIRLS</a>
+            </div>
+            <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="/">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-rightsidebar.html">View Blogs</a></li>
+                            <li><a href="blog-leftsidebar.html">Post Blog</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
 
     <g:layoutBody/>
 

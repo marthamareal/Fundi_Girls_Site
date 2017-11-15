@@ -8,7 +8,8 @@ import com.web.site.UserRole
 class BootStrap {
 
     def init = { servletContext ->
-       // initData()
+        new Requestmap(url: '/**', configAttribute: 'permitAll').save()
+        initData()
     }
 
    static def initData(){
@@ -16,7 +17,7 @@ class BootStrap {
         def roleAdmin =  Role.findByAuthority('ROLE_ADMIN') ?: new Role('ROLE_ADMIN').save(failOnError: true , flush: true)
         UserRole . create(userAdmin , roleAdmin ,true)
 
-       for (String url in [
+       for (String url in ['/',
                '/login/**', '/**/js/**', '/**/css/**',
                '/**/images/**', '/**/favicon.ico', '/logout/**' , '/user/register','/user/save','user/show']) {
           Requestmap.findByUrl(url)?: new Requestmap(url: url, configAttribute: 'permitAll').save()

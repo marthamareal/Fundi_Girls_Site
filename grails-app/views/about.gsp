@@ -12,68 +12,6 @@
 
 <div id="wrapper">
     <section id="featured" class="bg">
-        <!-- start slider -->
-
-
-        <!-- start slider -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Slider -->
-                    <div id="main-slider" class="main-slider flexslider">
-                        <ul class="slides">
-                            <li>
-                                <asset:image src="1.jpg" alt="" />
-                                <div class="flex-caption">
-                                    <h3>Vision</h3>
-                                    <p> We want to see improved ,gender and equal  access to quality science education, better technology innovation and .....</p>
-                                    <a href="#" class="btn btn-theme">Learn More</a>
-                                </div>
-                            </li>
-                            <li>
-
-                                <asset:image src="3.jpg" alt="" />
-                                <div class="flex-caption">
-                                    <h3>Fundibots</h3>
-                                    <p>Our mission is to use robotics training in African schools to create and<br> inspire a new generation of problem solvers, innovators and change-makers.</p>
-                                    <a href="#" class="btn btn-theme">Learn More</a>
-                                </div>
-                            </li>
-                            <li>
-                                <asset:image src="2.jpg" alt="" />
-                                <div class="flex-caption">
-                                    <h3>Note!!!!!</h3>
-                                    <p> Technology keeps on improving because even our needs and demands for technology keep on changing. .</p>
-                                    <a href="#" class="btn btn-theme">Learn More</a>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- end slider -->
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-    <section class="callaction">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="cta-text">
-                        <h2>OUR MISSION</h2>
-                        <p> To encourage and motivate students in high school especially girls to take up a career in technology through equipping them with technology skills.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="cta-btn">
-                        <a href="#" class="btn btn-theme btn-lg">Subscribe<i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="content">
 
@@ -98,7 +36,6 @@
                             <p>
                                 To create sustainable solutions with technology, everyone ought to be involved. It has been noted for some time now that the field of technology as an area of work, has been, and continues to be gender imbalanced and gender stratified. This persistent trend has led to a growing body of theorization and to the re-evaluations of the inter-relationship between gender and technology. Women’s under‐representation has been a result of gendered technologies and inflexibility of masculine values associated with technology. To bridge this gap, it is therefore important to create a constructive approach through strategies and
                                 abilities to reshape technology while focusing on girl’s and women’s interests as distinct from those of men, providing a wider appropriation and use of technology for the former. </p>
-                            <a href="/about">Read more</a>
 
                         </div>
                         <div class="col-sm-6 col-lg-6">
@@ -124,7 +61,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-sm-6 col-md-6">
-                            <h4>Testimonials</h4>
+                            <h4>Background</h4>
                             <div class="testimonialslide clearfix flexslider">
                                 <ul class="slides">
                                     <li>
@@ -180,27 +117,7 @@
         <div class="container marginbot50">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="heading">Recent Works</h4>
-
-                    <div id="filters-container" class="cbp-l-filters-button">
-                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
-                            <div class="cbp-filter-counter"></div>
-                        </div>
-                        <div data-filter=".identity" class="cbp-filter-item">Camps
-                            <div class="cbp-filter-counter"></div>
-                        </div>
-                        <div data-filter=".web-design" class="cbp-filter-item">Training
-                            <div class="cbp-filter-counter"></div>
-                        </div>
-                        <div data-filter=".graphic" class="cbp-filter-item">Schools
-                            <div class="cbp-filter-counter"></div>
-                        </div>
-                        <div data-filter=".logo" class="cbp-filter-item">Slay Queens
-                            <div class="cbp-filter-counter"></div>
-                        </div>
-                    </div>
-
-
+                    <h4 class="heading">Our Team</h4>
                     <div id="grid-container" class="cbp-l-grid-projects">
                         <ul>
                             <li class="cbp-item graphic">
@@ -270,11 +187,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="cbp-l-loadMore-button">
-                        <a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-                    </div>
-
                 </div>
             </div>
         </div>

@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" style="color: orange">FUNDI GIRLS</a>
+                <a class="navbar-brand" href="/" style="color: orange">FUNDI GIRLS</a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
@@ -52,7 +52,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="">
-                        <a href="/">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li>
                         <a href="portfolio.html">Portfolio</a>
@@ -60,8 +60,8 @@
 
                     <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog-rightsidebar.html">View Blogs</a></li>
-                            <li><a href="blog-leftsidebar.html">Post Blog</a></li>
+                            <li><a href="${createLink(controller: 'blog' , action: 'index')}">View All</a></li>
+                            <li><a href="${createLink(controller: 'blog' , action: 'create')}">Post Blog</a></li>
 
                         </ul>
                     </li>

@@ -6,10 +6,9 @@ class UserController {
 
     def show() {
 
-            def registered = StudentRegister.list()
-            [registered:registered]
     }
     def register(){
+
 
     }
     @Transactional
@@ -27,6 +26,14 @@ class UserController {
         user.comfirmpassword = params.comfirmpassword
         user.save(flush: true , failOnError: true)
 
-        render (view: 'show')
+        render (view: '/')
     }
+    def checkMail(){
+       if(User.findByEmail(params.email)) {
+           return true
+       }
+           else {
+           return false
+       }
+       }
 }

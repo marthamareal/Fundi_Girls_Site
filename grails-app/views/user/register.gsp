@@ -7,12 +7,16 @@
 </head>
 
 <body>
+<section id="content">
+    <div class="container" >
 
-<div class="container">
-    <div class="row main" style="margin-top: 10%; ">
-        <div class="main-login main-center" >
-            <h5>Sign up with Fundi Girls Connect......</h5>
-            <g:uploadForm controller="user" method="post" action="save">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+
+            <h5 style="margin-left: 130px">Sign up with Fundi Girls Connect......</h5>
+
+                <hr class="colorgraph" style="width: auto">
+            <g:uploadForm controller="user" method="post" action="save" id="register">
 
                 <div class="form-group">
                     <label  class="cols-sm-2 control-label">First Name</label>
@@ -63,7 +67,7 @@
                     <div class="cols-sm-10">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                            <input type="email" class="form-control" name="email" id="email"  placeholder="Enter your Email" required="required"/>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email" required="required"/>
                         </div>
                     </div>
                 </div>
@@ -94,21 +98,21 @@
                         </div>
                     </div>
                 </div>
+
+                <hr class="colorgraph" style="width: auto">
+
                 <div class="form-group ">
-                    <button  class="btn btn-lg btn-block login-button" type="submit"
-                                                  style="padding: 0 15px">REGISTER
-                    &nbsp; <span class="glyphicon glyphicon-send"></span>
-                </button>
+
+                    <g:actionSubmit type="submit" class="btn btn-primary btn-block btn-lg" value="REGISTER" action="save">REGISTER</g:actionSubmit>
+
                 </div>
 
             </g:uploadForm>
+
+            </div>
         </div>
     </div>
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+</section>
 <style>
 #playground-container {
     height: 500px;

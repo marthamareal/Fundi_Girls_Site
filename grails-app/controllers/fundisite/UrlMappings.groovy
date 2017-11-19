@@ -13,6 +13,7 @@ class UrlMappings {
         "/about"(view:"/about")
         "500"(view:'/error')
         "404"(view:'/notFound')
+        "/blog/show"(view: '/blog/show')
         "/login/$action?"(controller: "login")
         "/logout/$action?"(controller: "logout")
 

@@ -29,6 +29,9 @@ class User implements Serializable {
 	boolean accountLocked
 	boolean passwordExpired
 
+    static hasMany = [blogs:Blog ,comments: Comment]
+
+
     User(String username, String password, String comfirmpassword) {
         this()
         this.username = username
@@ -75,4 +78,9 @@ class User implements Serializable {
 	static mapping = {
 		password column: '`password`'
 	}
+    @Override
+    public  String toString(){
+        return "${username}"
+    }
+
 }

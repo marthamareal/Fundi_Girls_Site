@@ -23,5 +23,20 @@
 //= require jquery.countdown.min
 //= require optionspanel
 //= require validate
+var form = $("#register")
 
+form.validate({
+    rules: {
+        email: {
+            required: true,
+            remote: fundiContext + "/user/checkMail"
+        }
+    },
+messages: {
+        email : {
+            remote : "This Email is already taken"
+        }
 
+}
+}
+);

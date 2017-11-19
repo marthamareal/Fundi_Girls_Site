@@ -10,6 +10,9 @@
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application.js"/>
     <g:layoutHead/>
+    <g:javascript>
+    fundiContext = '{request.contextPath}'
+</g:javascript>
 </head>
 <body>
 <!-- start header -->
@@ -65,7 +68,20 @@
 
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="${createLink(controller: 'login' , action: 'auth')}">Contact</a></li>
+                    <li><a href="contact.html">Signin / Register</a></li>
+                    <sec:ifLoggedIn>
+                        <li style="padding-left: 10px;">
+                            <form name="logout" method="POST"
+                                  action="${createLink(controller: 'logout')}">
+                                <button type="submit" class="btn" value="Logout">
+                                    <span class="glyphicon glyphicon-off"
+                                          aria-hidden="true"></span>&nbsp; Logout
+                                </button>
+                            </form>
+                        </li>
+                    </sec:ifLoggedIn>
+
                 </ul>
             </div>
         </div>

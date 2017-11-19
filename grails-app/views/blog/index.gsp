@@ -20,77 +20,37 @@
                 <div class="col-lg-8">
                     <div class="comment-area">
                         <h4>Posts</h4>
+                        <g:each in="${blogs}" var="blog">
                         <div class="media">
                             <a href="#" class="pull-left"><asset:image src="avatar.png" alt="" class="img-circle" /></a>
                             <div class="media-body">
                                 <div class="media-content">
-                                    <h6><span>March 12, 2013</span><a href="${createLink(controller: 'blog' , action: 'show')}">Michael Simpson</a></h6>
+                                    <h6>${blog.user}<br><br><a href="${createLink(controller: 'blog' , action: 'show')}">${blog.titte}</a></h6>
                                     <p>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </p>
+                                        ${blog.message} </p>
 
-                                    <a href="#" class="align-right reply">Reply</a>
+                                    <button type="button" class="align-right reply btn btn-primary" onclick="show('reply-form');">Reply</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="media">
-                            <a href="#" class="pull-left"><asset:image src="avatar.png" alt="" class="img-circle" /></a>
-                            <div class="media-body">
-                                <div class="media-content">
-                                    <h6><span>March 12, 2013</span> <a href="${createLink(controller: 'blog' , action: 'show')}">Michael Simpson</a></h6>
-                                    <p>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </p>
+                        %{--only displayed when reply is clicked (its set in style of display:none in div)  --}%
+                            <div class="marginbot30" id="reply-form" style="display: none">
+                                <h4>Leave your comment</h4>
 
-                                    <a href="#" class="align-right reply">Reply</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <a href="#" class="pull-left"><asset:image src="avatar.png" alt="" class="img-circle" /></a>
-                            <div class="media-body">
-                                <div class="media-content">
-                                    <h6><span>March 12, 2013</span><a href="${createLink(controller: 'blog' , action: 'show')}">Michael Simpson</a></h6>
-                                    <p>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </p>
+                                <g:uploadForm role="form" action="save" controller="comment">
 
-                                    <a href="#" class="align-right reply">Reply</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <a href="#" class="pull-left"><asset:image src="avatar.png" alt="" class="img-circle" /></a>
-                            <div class="media-body">
-                                <div class="media-content">
-                                    <h6><span>March 12, 2013</span> <a href="${createLink(controller: 'blog' , action: 'show')}">Michael Simpson</a></h6>
-                                    <p>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="user" value="${user}" name="user">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="8" placeholder="* Your comment here" name="message"></textarea>
+                                    </div>
+                                    <g:actionSubmit value="Submit" type="submit" class="btn btn-theme btn-md" action="save"/>
+                                </g:uploadForm>
 
-                                    <a href="#" class="align-right reply">Reply</a>
-                                </div>
                             </div>
-                        </div>
-                        %{--only displayed when reply is clicked (its set in style of display:none in div)--}%
-                        <div class="marginbot30" style="display: none">
-                        <h4>Leave your comment</h4>
 
-
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder="* Enter name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="* Enter email address">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="8" placeholder="* Your comment here"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-theme btn-md">Submit</button>
-                        </form>
-
-                    </div>
+                        </g:each>
 
                     </div>
 
@@ -118,14 +78,14 @@
                             <h5 class="widgetheading">Latest posts</h5>
                             <ul class="recent">
                                 <li>
-                                    <asset:image src="dummies/blog/65x65/thumb1.jpg" class="pull-left" alt="" />
+                                    <asset:image src="thumb1.jpg" class="pull-left" alt="" />
                                     <h6><a href="#">How to make your owm Robot</a></h6>
                                     <p>
                                         Be determined.....
                                     </p>
                                 </li>
                                 <li>
-                                    <a href="#"><asset:image src="dummies/blog/65x65/thumb2.jpg" class="pull-left" alt="" /></a>
+                                    <a href="#"><asset:image src="thumb2.jpg" class="pull-left" alt="" /></a>
                                     <h6><a href="#">Design a webPage</a></h6>
                                     <p>
                                         You can do this using html and css.... </p>
@@ -169,5 +129,15 @@
     </div>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<script type="text/javascript">
+    function show(elementId) {
+    //we hide  form
+    document.getElementById("reply-form").style.display="none";
+    //and then we simply show wanted one isn't that nicer and cleaner?
+    document.getElementById(elementId).style.display="block";
+}
+
+</script>
 </body>
 </html>

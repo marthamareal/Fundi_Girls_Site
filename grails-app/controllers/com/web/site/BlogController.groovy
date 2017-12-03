@@ -16,16 +16,9 @@ class BlogController {
 
     def blogdetails(Long id){
 
-       render(view: '/blogBackup/show' , model: [blog: Blog].get(id))
+       render(view: '/blog/index' , model: [blog: Blog].get(id))
     }
 
-    def show(Blog blog){
-        respond blog
-    }
-
-      def reply(Blog blog){
-        return blog.getId()
-    }
     def create(){
 
     }
@@ -54,14 +47,14 @@ if(!(Blog.findByTitte(params.title))) {
 
             break
         default:
-            render(view: '/blogBackup/create')
+            render(view: '/blog/create')
     }
     post.save(flush: true)
 
-    render(view: '/blogBackup/index')
+    render(view: '/blog/index')
 }
         else {
-    render(view: '/blogBackup/create')
+    render(view: '/blog/create')
 }
 
     }

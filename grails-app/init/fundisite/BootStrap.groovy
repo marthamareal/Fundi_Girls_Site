@@ -9,7 +9,7 @@ class BootStrap {
 
     def init = { servletContext ->
        // new Requestmap(url: '/**', configAttribute: 'permitAll').save()
-       // initData()
+        initData()
     }
 
    static def initData(){
@@ -19,7 +19,7 @@ class BootStrap {
 
        for (String url in ['/',
                '/login/**', '/**/js/**', '/**/css/**',
-               '/**/images/**', '/**/favicon.ico', '/logout/**' , '/user/register','/user/save','user/show','/blog/show']) {
+               '/**/images/**', '/**/favicon.ico', '/logout/**' , '/user/register','/user/save','/blog/index','/blog/create','/blog/save','/about','/gallery']) {
           Requestmap.findByUrl(url)?: new Requestmap(url: url, configAttribute: 'permitAll').save()
        }
        Requestmap.findByUrl('/**')?: new Requestmap(url: '/**', configAttribute: 'ROLE_ADMIN').save()

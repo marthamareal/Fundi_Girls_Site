@@ -17,7 +17,7 @@ class CommentController {
         comment.user = springSecurityService.currentUser as User
         blog.addToComments(comment)
         comment.save(flush: true)
-        render (view: '/blog/index')
+        redirect (view: '/blog/index')
     }
     def show(){
 

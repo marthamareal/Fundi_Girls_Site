@@ -3,19 +3,22 @@ package fundisite
 class UrlMappings {
 
     static mappings = {
-        "/$controller/$action?/$id?(.$format)?"{
+        "/$controller/$action?/$id?(.$format)?" {
             constraints {
                 // apply constraints here
             }
         }
 
-        "/"(view:"/index")
-        "/about"(view:"/about")
-        "500"(view:'/error')
-        "404"(view:'/notFound')
-        "/blog/show"(view: '/blog/show')
+//        "/"(redirect: [view: "/index"])
+        "/"(view: '/index')
+        "/about"(view: '/about')
+        "500"(view: '/error')
+        "/gallery"(view: '/gallery')
+        "/error"(view: '/index')
+        "404"(view: '/notFound')
+        "/contact"(view: '/contact')
+        "/about"(view: '/about')
         "/login/$action?"(controller: "login")
         "/logout/$action?"(controller: "logout")
-
     }
 }

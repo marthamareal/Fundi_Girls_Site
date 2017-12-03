@@ -23,7 +23,7 @@
                     <div id="main-slider" class="main-slider flexslider">
                         <ul class="slides">
                             <li>
-                                <asset:image src="1.jpg" alt="" />
+                                <asset:image src="1m.jpeg" alt="" />
                                 <div class="flex-caption">
                                     <h3>Vision</h3>
                                     <p> We want to see improved ,gender and equal  access to quality science education, better technology innovation and .....</p>
@@ -32,7 +32,7 @@
                             </li>
                             <li>
 
-                                <asset:image src="3.jpg" alt="" />
+                                <asset:image src="girl.jpg" alt="" />
                                 <div class="flex-caption">
                                     <h3>Fundibots</h3>
                                     <p>Our mission is to use robotics training in African schools to create and<br> inspire a new generation of problem solvers, innovators and change-makers.</p>
@@ -40,7 +40,7 @@
                                 </div>
                             </li>
                             <li>
-                                <asset:image src="2.jpg" alt="" />
+                                <asset:image src="mendo.JPG" alt="" />
                                 <div class="flex-caption">
                                     <h3>Note!!!!!</h3>
                                     <p> Technology keeps on improving because even our needs and demands for technology keep on changing. .</p>
@@ -54,8 +54,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
     <section class="callaction">
         <div class="container">
@@ -63,8 +61,8 @@
                 <div class="col-lg-8">
                     <div class="cta-text">
                         <h2>OUR MISSION</h2>
-                        <p> To encourage and motivate students in high school especially girls to take up a career in technology through equipping them with technology skills.</p>
-                    </div>
+                        <p style="color: black"> To encourage and motivate students in high school especially girls to take up a career in technology through equipping them with technology skills.</p>
+                         </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="cta-btn">
@@ -95,9 +93,9 @@
                         <div class="col-sm-6 col-lg-6">
                             <h4>About Fundi Girls </h4>
                             <p><strong>Our Reason to Exist And Expand Allover The world </strong></p>
-                            <p>
-                                To create sustainable solutions with technology, everyone ought to be involved. It has been noted for some time now that the field of technology as an area of work, has been, and continues to be gender imbalanced and gender stratified. This persistent trend has led to a growing body of theorization and to the re-evaluations of the inter-relationship between gender and technology. Women’s under‐representation has been a result of gendered technologies and inflexibility of masculine values associated with technology. To bridge this gap, it is therefore important to create a constructive approach through strategies and
-                                abilities to reshape technology while focusing on girl’s and women’s interests as distinct from those of men, providing a wider appropriation and use of technology for the former. </p>
+                            <p  style="color: black">
+                                To create sustainable solutions with technology, everyone ought to be involved. It has been noted for some time now that the field of technology as an area of work,
+                                has been, and continues to be gender imbalanced and gender stratified.</p>
                             <a href="/about">Read more</a>
 
                         </div>
@@ -128,7 +126,7 @@
                             <div class="testimonialslide clearfix flexslider">
                                 <ul class="slides">
                                     <li>
-                                        <blockquote>
+                                        <blockquote  style="color: black">
                                             To be successful in this world doesn't depend on the age,gender,status neither does it depend on which school you went to.<br>
                                             However it depends on your friends, attitude and most importantly the effort you put in and what you put in.
                                         </blockquote>
@@ -200,86 +198,89 @@
                         </div>
                     </div>
 
-
                     <div id="grid-container" class="cbp-l-grid-projects">
                         <ul>
                             <li class="cbp-item graphic">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/1.jpg" alt="" />
+                                        <asset:image src="mwf2-099-img-1002_orig.jpg" alt="" />
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="assets/mwf2-099-img-1002_orig.jpg" class="cbp-l-caption-buttonRight">view larger</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-desc">Training At St. Catherine</div>
+                                <div class="cbp-l-grid-projects-title">Dashboard</div>
+                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
                             </li>
                             <li class="cbp-item web-design logo">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/2.jpg" alt="" />
+                                        <asset:image src="mendo.JPG" alt="" />
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="assets/mendo.JPG" class="cbp-l-caption-buttonRight">view larger</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-desc">Training At Kisaasi Collage</div>
-                            </li>
-                            <li class="cbp-item graphic logo">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/3.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-desc">Camp At Ai niish</div>
-                            </li>
-                            <li class="cbp-item web-design graphic">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/4.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-desc">Camp in Jinja</div>
+                                <div class="cbp-l-grid-projects-title">World Clock Widget</div>
+                                <div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
                             </li>
                             <li class="cbp-item identity web-design">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/5.jpg" alt="" />
+                                        <asset:image src="img1.jpg" alt="" />
                                     </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-desc">Buddo</div>
-                            </li>
-                            <li class="cbp-item identity web-design">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/6.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-desc">Makindye SS</div>
-                            </li>
-                            <li class="cbp-item graphic logo">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/7.jpg" alt="" />
-                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
 
-                                </div>
-                                <div class="cbp-l-grid-projects-desc">Mareal Slaying</div>
-                            </li>
-                            <li class="cbp-item graphic logo">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <asset:image src="works/8.jpg" alt="" />
+                                                <a href="assets/img1.jpg" class="cbp-l-caption-buttonRight">view larger</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-desc">Swabra Slaying</div>
+                                <div class="cbp-l-grid-projects-title">WhereTO App</div>
+
                             </li>
+                            <li class="cbp-item identity web-design">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <asset:image src="images1.jpeg" alt="" />
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+
+                                                <a href="assets/images1.jpeg" class="cbp-l-caption-buttonRight">view larger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+
+                            </li>
+
                         </ul>
                     </div>
 
-                    <div class="cbp-l-loadMore-button">
-                        <a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-                    </div>
 
                 </div>
             </div>
-        </div>
 
+                    <div class="cbp-l-loadMore-button">
+                        <a href="/gallery" class="btn btn-primary " style="color: white">LOAD MORE</a>
+                    </div>
+
+                </div>
     </section>
+
    <div id="sub-footer">
             <div class="container">
                 <div class="row">

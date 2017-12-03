@@ -4,11 +4,7 @@ import grails.transaction.Transactional
 
 class UserController {
 
-    def show() {
-
-    }
     def register(){
-
 
     }
     @Transactional

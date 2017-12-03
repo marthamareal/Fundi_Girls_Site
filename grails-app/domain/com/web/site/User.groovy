@@ -68,7 +68,7 @@ class User implements Serializable {
         comfirmpassword blank: false ,nullable: false
         email blank: false ,nullable: true
         school blank: false ,nullable: true
-        firstName blank: false ,nullable: true
+        firstName blank: false ,nullable: false
         lastName blank: false ,nullable: true
         gender nullable: true
         age nullable: true
